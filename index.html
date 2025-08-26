@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Giới thiệu giảng viên</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com "></script>
+</head>
+<body class="bg-gray-100 min-h-screen font-sans scroll-smooth">
+  <header class="fixed top-0 w-full bg-white shadow-md z-50 py-3 px-4">
+    <nav class="max-w-4xl mx-auto flex flex-wrap justify-center gap-4">
+      <a href="#giangvien" class="nav-link font-semibold text-gray-800 hover:text-blue-600 transition">Thông tin Giảng viên</a>
+      <a href="#tailieuchinh" class="nav-link font-semibold text-gray-800 hover:text-blue-600 transition">Tài Liệu chính</a>
+      <a href="#tailieuthamkhao" class="nav-link font-semibold text-gray-800 hover:text-blue-600 transition">Tài liệu tham khảo</a>
+    </nav>
+  </header>
+
+  <main class="snap-container">
+    <!-- Section Giảng viên -->
+    <section id="giangvien" class="snap-section bg-gradient-to-r from-blue-50 to-indigo-100 p-8 rounded-xl shadow-lg max-w-4xl mx-auto">
+      <div class="h-[54px] invisible"></div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="md:col-span-1 flex justify-center">
+          <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-500 shadow-md">
+            <img src="/LanAnhT02/source/anh_co_lan_anh.jpg" alt="Ảnh Cô Lan Anh" class="w-full h-full object-cover" />
+          </div>
+        </div>
+        <div class="md:col-span-2 bg-white rounded-lg text-center flex items-center justify-center p-4">
+          <div>
+            <h1 class="text-2xl font-bold text-gray-800 mb-2">TỐNG THỊ LAN ANH</h1>
+            <p class="text-lg font-semibold text-gray-700">Khoa Lý Luận Chính Trị & KHXHNV - Học viện CSND</p>
+          </div>
+        </div>
+        <div class="md:col-span-3 animated-gradient-line my-1"></div>
+        <div class="md:col-span-3 grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+          <div class="bg-white rounded-lg p-4">
+            <ul class="space-y-3 text-gray-700 list-none">
+              <li class="flex items-center gap-3">
+                <span class="text-sky-500 text-xl" aria-hidden="true">♀️</span>
+                <strong>Giới tính:</strong><span class="font-semibold">Nữ</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-emerald-500 text-xl" aria-hidden="true">📅</span>
+                <strong>Ngày sinh:</strong><span class="font-semibold">03/05/1987</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-violet-500 text-xl" aria-hidden="true">📞</span>
+                <strong>Số điện thoại:</strong><span class="font-semibold">0989234035</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="text-emerald-500 text-xl" aria-hidden="true">🎖️</span>
+                <strong>Chức danh:</strong><span class="font-semibold">Giảng viên chính</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-white rounded-lg p-4">
+            <h2 class="text-xl font-bold mb-3 text-gray-800 flex justify-center items-center gap-2">
+              <span class="text-emerald-500">🎖️</span>Lịch sử công tác
+            </h2>
+            <ul class="space-y-3 text-gray-700 list-disc pl-5">
+              <li><span class="font-semibold">Tốt nghiệp năm 2009 tại Học viện Báo chí và Tuyên truyền</span></li>
+              <li><span class="font-semibold">Từ năm 2009 đến nay công tác tại khoa Lý Luận chính trị & KHXHNV</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Tài Liệu Chính -->
+    <section id="tailieuchinh" class="snap-section bg-gradient-to-r from-green-50 to-teal-100 py-12 px-6">
+        <div class="max-w-6xl mx-auto animate-fadeIn">
+            <div class="grid grid-cols-1 md:grid-cols-[2fr_3fr] gap-8 items-center">
+                <!-- Thông tin tài liệu -->
+                <div class="bg-white/80 backdrop-blur-sm rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow border border-teal-100">
+                    <h2 class="text-3xl font-bold text-center text-teal-800 mb-4">Giáo trình Lịch sử Đảng Cộng sản Việt Nam</h2>
+                    <p class="text-gray-700 font-semibold mb-6 ">
+                         Giáo trình Lịch sử Đảng Cộng sản Việt Nam dành cho bậc đại học hệ không chuyên lý luận chính trị, cung cấp hệ thống kiến thức về sự ra đời của Đảng và quá trình Đảng lãnh đạo cách mạng Việt Nam qua các thời kỳ lịch sử.
+                    </p>
+                    
+                    <a 
+                        href="/LanAnhT02/source/GiaoTrinhLSD.pdf" 
+                        download
+                        class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500 to-green-500 text-white rounded-lg hover:from-teal-600 hover:to-green-600 transition-all transform hover:scale-105 shadow-md hover:shadow-lg"
+                    >
+                        <svg class="w-5 h-5 mr-2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 16L16 12M16 12L12 8M16 12L8 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        Tải về tài liệu
+                    </a>
+                </div>
+
+                <!-- DIV loading... -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg transition-shadow duration-300 relative mt-8 border border-gray-200">
+                    <!-- Hiệu ứng loading -->
+                    <div id="loadingPDF" class="absolute inset-0 bg-white flex items-center justify-center loading-spinner z-10">
+                        <div class="text-center">
+                            <div class="inline-block w-8 h-8 border-4 border-teal-500 border-t-transparent rounded-full animate-spin mb-2"></div>
+                            <p class="text-teal-700 text-sm font-medium">Đang tải tài liệu...</p>
+                        </div>
+                    </div>
+
+                    <!-- Khung PDF -->
+                    <div class="relative pt-[100%] bg-white">
+                        <iframe 
+                            src="/LanAnhT02/source/GiaoTrinhLSD.pdf" 
+                            class="absolute inset-0 w-full h-full bg-white"
+                            title="Giáo trình Lịch sử Đảng"
+                            onload="document.getElementById('loadingPDF').style.display = 'none'"
+                        ></iframe>
+                    </div>
+                    
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Tài Liệu Tham Khảo -->
+    <section id="tailieuthamkhao" class="snap-section bg-gradient-to-r from-green-50 to-teal-100 py-12 px-6">
+      
+        <div class="max-w-6xl mx-auto animate-fadeIn">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                
+                <!-- Cột trái (1/3) -->
+                <div class="bg-white/90 backdrop-blur-sm rounded-xl p-6 shadow-md">
+                    <h3 class="text-xl text-center font-bold text-teal-800 mb-4">Danh mục</h3>
+                    <ul class="space-y-8" id="menu">
+                      <li>
+                          <button onclick="showContent('thuvien')" 
+                                  class="w-full" 
+                                  type="button">
+                              <div class="flex items-start gap-3 border-l-2 border-emerald-500 pl-3 cursor-pointer hover:bg-red-50 p-2 rounded transition active"
+                                  id="btn-thuvien">
+                                  <div class="text-emerald-500 w-6 h-6 mt-1 flex-shrink-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-4.35-4.35M5 11a6 6 0 1112 0 6 6 0 01-12 0z" />
+                                      </svg>
+                                  </div>
+                                  <div class="flex-1 text-left">
+                                      <h3 class="font-bold text-gray-800">THƯ VIỆN ĐIỆN TỬ HVCSND</h3>
+                                      <p class="text-sm text-gray-600 mt-1">Nơi cung cấp nguồn tài liệu số phong phú, phục vụ học tập, giảng dạy và nghiên cứu trong toàn Học viện Cảnh sát nhân dân.</p>
+                                  </div>
+                              </div>
+                          </button>
+                      </li>
+
+
+
+                      <li>
+                          <button onclick="showContent('tulieuvankiendang')" 
+                                  class="w-full" 
+                                  type="button">
+                              <div class="flex items-start gap-3 border-l-2 border-emerald-500 pl-3 cursor-pointer hover:bg-red-50 p-2 rounded transition"
+                                  id="btn-tulieuvankiendang">
+                                  <div class="text-emerald-500 w-6 h-6 mt-1 flex-shrink-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5h6m-3 0v1m-6 4h12m-12 4h12m-12 4h12M7 3h10a2 2 0 012 2v14a2 2 0 01-2 2H7a2 2 0 01-2-2V5a2 2 0 012-2z" />
+                                      </svg>
+                                  </div>
+                                  <div class="flex-1 text-left">
+                                      <h3 class="font-bold text-gray-800">HỆ THỐNG TƯ LIỆU - <br> VĂN KIỆN ĐẢNG</h3>
+                                      
+                                  </div>
+                              </div>
+                          </button>
+                      </li>
+                      <li>
+                          <button onclick="showContent('sach')" 
+                                  class="w-full" 
+                                  type="button">
+                              <div class="flex items-start gap-3 border-l-2 border-emerald-500 pl-3 cursor-pointer hover:bg-red-50 p-2 rounded transition"
+                                  id="btn-thuvien">
+                                  <div class="text-emerald-500 w-6 h-6 mt-1 flex-shrink-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.245 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.745 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.745 0-3.332.477-4.5 1.253" />
+                                      </svg>
+                                  </div>
+                                  <div class="flex-1 text-left">
+                                      <h3 class="font-bold text-gray-800">SÁCH THAM KHẢO</h3>
+                                      
+                                  </div>
+                              </div>
+                          </button>
+                      </li>
+
+                      <li>
+                          <button onclick="showContent('bao')" 
+                                  class="w-full" 
+                                  type="button">
+                              <div class="flex items-start gap-3 border-l-2 border-emerald-500 pl-3 cursor-pointer hover:bg-red-50 p-2 rounded transition"
+                                  id="btn-thuvien">
+                                  <div class="text-emerald-500 w-6 h-6 mt-1 flex-shrink-0">
+                                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                                        <rect x="4" y="4" width="16" height="16" rx="2" strokeWidth="2" />
+                                        <path strokeWidth="2" d="M16 4L20 8H16V4Z" fill="none" />
+                                        <line x1="6" y1="10" x2="14" y2="10" strokeWidth="2" />
+                                        <line x1="6" y1="14" x2="12" y2="14" strokeWidth="2" />
+                                      </svg>
+                                  </div>
+                                  <div class="flex-1 text-left">
+                                      <h3 class="font-bold text-gray-800">BÁO VÀ TẠP CHÍ</h3>
+                                      
+                                  </div>
+                              </div>
+                          </button>
+                      </li>
+                    </ul>
+                </div>
+
+                <!-- Cột phải (2/3) -->
+                <div class="md:col-span-2">
+
+                    <!-- Nội dung thư viện -->
+                    <div id="thuvien" class="content-section animate-fadeIn p-6 max-w-5xl mx-auto">
+                      <h3 class="text-2xl font-bold text-teal-800 mb-4">Thư viện điện tử Học viện Cảnh sát nhân dân</h3>
+                      <div class="bg-white rounded-xl overflow-hidden shadow-lg">
+                        <img 
+                          src="/LanAnhT02/source/ThuviendientuHVCSND.jpg" 
+                          alt="Thư viện" 
+                          style="width: 700px; height: 600px; object-fit: cover;"
+                        />
+                      </div>
+                    </div>    
+
+                    <!-- Tư liệu văn kiện Đảng -->
+                    <div id="tulieuvankiendang" class="content-section hidden p-6 max-w-4xl mx-auto">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4">HỆ THỐNG TƯ LIỆU - VĂN KIỆN ĐẢNG</h3>
+                        <div class="bg-white rounded-xl overflow-hidden shadow-lg relative">
+                        
+                          <div class="max-w-6xl mx-auto">
+                            <!-- Tab điều hướng -->
+                            <div class="flex flex-wrap gap-3 mb-6" id="tabContainer">
+                              <button onclick="changeContenttlvkd(0)" class="tab-button active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Hệ thống tư liệu -<br>văn kiện Đảng</button>
+                              <button onclick="changeContenttlvkd(1)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Văn viện Đảng toàn tập <br> tập 7</button>
+                              <button onclick="changeContenttlvkd(2)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Hồ Chí Minh Toàn tập <br> tập 3</button>
+                             
+                              
+                            </div>
+
+                            <!-- Khu vực hiển thị ảnh -->
+                            <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
+                              <a id="tulieuvankiendang-imageLink" href="#" target="_blank" class="absolute inset-0 block">
+                                <img id="tulieuvankiendang-contentImage" 
+                                    src="/LanAnhT02/source/hethongtulieuvankiendang.jpg" 
+                                    alt="Tạp chí cộng sản" 
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
+                              </a>
+                            </div>
+                          </div>
+
+                          <script>
+                            // Mảng chứa thông tin hình ảnh tlvkd
+                            const contentDatatulieuvankiendang = [
+                              {
+                                src: "/LanAnhT02/source/hethongtulieuvankiendang.jpg",
+                                alt: "Hệ thống tư liệu - văn kiện Đảng",
+                                link: "https://tulieuvankien.dangcongsan.vn/"
+                              },
+                              {
+                                src: "/LanAnhT02/source/vankiendangtoantaptap7.jpg",
+                                alt: "Văn kiện Đảng toàn tập - tập 7",
+                                link: "https://tulieuvankien.dangcongsan.vn/van-kien-tu-lieu-ve-dang/book/van-kien-dang-toan-tap/van-kien-dang-toan-tap-tap-7-87"
+                              },
+                              {
+                                src: "/LanAnhT02/source/hochiminhtoantaptap3.jpg",
+                                alt: "Hồ Chí Minh toàn tập - tập 3",
+                                link: "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/book/ho-chi-minh/tac-pham/ho-chi-minh-toan-tap-tap-3-270"
+                              },
+                            ];
+
+                            // Hàm thay đổi nội dung hiển thị - change 3 const 
+                            function changeContenttlvkd(index) {
+                              const imageElement = document.getElementById('tulieuvankiendang-contentImage');
+                              const imageLink = document.getElementById('tulieuvankiendang-imageLink');
+                              const tabs = document.querySelectorAll('.tab-button');
+                              
+                              // update pic
+                              imageElement.src = contentDatatulieuvankiendang[index].src;
+                              imageElement.alt = contentDatatulieuvankiendang[index].alt;
+                              imageLink.href = contentDatatulieuvankiendang[index].link;
+                              
+                              // update trạng thái active cho tab
+                              tabs.forEach((tab, i) => {
+                                if (i === index) {
+                                  tab.classList.add('active-tab');
+                                } else {
+                                  tab.classList.remove('active-tab');
+                                }
+                              });
+                            }
+                          </script>
+                        
+                        </div>
+                    </div>
+
+                    <!-- <div id="tulieuvankiendang" class="content-section hidden">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-4">Hệ thống tư liệu - văn kiện Đảng</h3>
+                          <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
+                              <a href="https://tulieuvankien.dangcongsan.vn/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block">
+                                 <img id="tulieuvankiendang-contentImage" 
+                                    src="/LanAnhT02/source/hethongtulieuvankiendang.jpg" 
+                                    alt="Hệ thống tư liệu - văn kiện Đảng" 
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
+                              </a> 
+                          </div> -->
+
+
+                        <!-- <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <a href=" https://www.nhandan.vn " target="_blank" 
+                               class="block p-4 bg-white rounded-xl shadow hover:shadow-md transition-shadow border-l-4 border-teal-500">
+                                <h4 class="font-semibold text-teal-700">Nhân Dân</h4>
+                                <p class="text-sm text-gray-600">Báo chính thống của Đảng</p>
+                            </a>
+                            <a href="https://vnexpress.net " target="_blank" 
+                               class="block p-4 bg-white rounded-xl shadow hover:shadow-md transition-shadow border-l-4 border-teal-500">
+                                <h4 class="font-semibold text-teal-700">VnExpress</h4>
+                                <p class="text-sm text-gray-600">Báo điện tử hàng đầu</p>
+                            </a>
+                            <a href="https://tuoitre.vn " target="_blank" 
+                               class="block p-4 bg-white rounded-xl shadow hover:shadow-md transition-shadow border-l-4 border-teal-500">
+                                <h4 class="font-semibold text-teal-700">Tuổi Trẻ</h4>
+                                <p class="text-sm text-gray-600">Báo dành cho giới trẻ</p>
+                            </a>
+                            <a href="https://www.tapchicongsan.org.vn " target="_blank" 
+                               class="block p-4 bg-white rounded-xl shadow hover:shadow-md transition-shadow border-l-4 border-teal-500">
+                                <h4 class="font-semibold text-teal-700">Tạp chí Cộng Sản</h4>
+                                <p class="text-sm text-gray-600">Tạp chí lý luận chính trị</p>
+                            </a>
+                        </div> -->
+                    <!-- </div> -->
+
+
+                    
+
+
+                    <!-- Nội dung sách tham khảo -->
+                    <div id="sach" class="content-section hidden p-6 max-w-6xl mx-auto h-[650px]">
+                        <h3 class="text-2xl font-bold text-teal-800 mb-6">Danh sách sách tham khảo</h3>
+
+                        <!-- Thanh cuộn ngang -->
+                        <div class="overflow-x-auto pb-4 h-full">
+                            <!-- Container flex cho các cuốn sách -->
+                            <div class="flex space-x-4 min-w-max h-full items-start">
+                                
+                                <!-- Sách 1 -->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/LanAnhT02/source/sach1phongtraodanchu.jpg"
+                                                alt="Bìa sách Phong trào dân tộc dân chủ ở nam kỳ 1930 - 1945"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">PHONG TRÀO DÂN TỘC DÂN CHỦ Ở NAM KỲ 1930 - 1945</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    <div><b>Tác giả:</b> TS. Phạm Thị Huệ</div>
+                                                    <div><b>Số trang:</b> 400 trang</div>
+                                                    <div><b>Giá tiền:</b> 95.000 đ</div>
+                                                    <div><b>Xuất bản:</b> 2013</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sách 2-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/LanAnhT02/source/sach2cachmangthang8.jpg"
+                                                alt="Bìa sách Cách mạng tháng Tám 1945 - thắng lợi vĩ đại đầu tiên của dân tộc Việt Nam trong thế kỷ XX"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-4 text-red-500">CÁCH MẠNG THÁNG TÁM 1945 - THẮNG LỢI VĨ ĐẠI ĐẦU TIÊN CỦA DÂN TỘC VIỆT NAM TRONG THẾ KỶ XX</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    <div><b>Tác giả:</b> GS.TS.NGND Trịnh Nhu, PGS.TS Trần Trọng Thơ</div>
+                                                    <div><b>Số trang:</b> 448 trang</div>
+                                                    <div><b>Giá tiền:</b> 60.000 đ</div>
+                                                    <div><b>Xuất bản:</b> 2020</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sách 3-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/LanAnhT02/source/sach3cachmangthang8.jpg"
+                                                alt="Bìa sách Cách mạng Tháng Tám năm 1945 ở Hà Nội"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM NĂM 1945 Ở HÀ NỘI</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    <div><b>Tác giả:</b> Nguyễn Đình Lê </div>
+                                                    <div><b>Số trang:</b> 448 trang</div>
+                                                    <div><b>Giá tiền:</b> </div>
+                                                    <div><b>Xuất bản:</b> 2010</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                
+                                <!-- Sách 4-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/LanAnhT02/source/sach4cachmangthangtam.jpg"
+                                                alt="Bìa sách Cách mạng Tháng Tám 1945 toàn cảnh"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM 1945 TOÀN CẢNH</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    <div><b>Tác giả:</b> GS.TS Phan Ngọc Liên</div>
+                                                    <div><b>Số trang:</b> 543 trang</div>
+                                                    <div><b>Giá tiền:</b> đ</div>
+                                                    <div><b>Xuất bản:</b> 2005</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                                                
+                                <!-- Sách 5-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/LanAnhT02/source/sach5cachmangthang8.jpg"
+                                                alt="Bìa sách Cách mạng Tháng Tám - Những giờ phút lịch sử"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM - NHỮNG GIỜ PHÚT LỊCH SỬ</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    <div><b>Tác giả:</b> GS Đinh Xuân Lâm, TS Nguyễn Văn Khoan</div>
+                                                    <div><b>Số trang:</b> 400 trang</div>
+                                                    <div><b>Giá tiền:</b>  đ</div>
+                                                    <div><b>Xuất bản:</b> 2010</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>                                                                
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Báo và tạp chí -->
+                    <div id="bao" class="content-section hidden p-6 max-w-4xl mx-auto">
+                        <h class="text-2xl font-bold text-teal-800 mb-4">Báo và tạp chí</h3>
+                        <div class="bg-white rounded-xl overflow-hidden shadow-lg relative">
+                        
+                          <div class="max-w-6xl mx-auto">
+                            <!-- Tab điều hướng -->
+                            <div class="flex flex-wrap gap-3 mb-6" id="tabContainer">
+                              <button onclick="changeContent(0)" class="tab-button text-[15px] font-semibold active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Tạp chí Cộng sản</button>
+                              <button onclick="changeContent(1)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Tạp chí lịch sử Đảng</button>
+                              <button onclick="changeContent(2)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Báo Quân đội nhân dân</button>
+                              <button onclick="changeContent(3)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Báo nhân dân</button>
+                              
+                            </div>
+
+                            <!-- Khu vực hiển thị ảnh -->
+                            <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
+                              <a id="bao-imageLink" href="#" target="_blank" class="absolute inset-0 block">
+                                <img id="bao-contentImage" 
+                                    src="/LanAnhT02/source/tapchicongsan.jpg" 
+                                    alt="Tạp chí cộng sản" 
+                                    class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
+                              </a>
+                            </div>
+                          </div>
+
+                          <script>
+                            
+                            // Mảng chứa thông tin hình ảnh
+                            const contentData = [
+                              {
+                                src: "/LanAnhT02/source/tapchicongsan.jpg",
+                                alt: "Tạp chí cộng sản",
+                                link: "https://www.tapchicongsan.org.vn/web/guest/chi-tiet-tim-kiem/-/2018/965402/bai-hoc-phat-huy-suc-manh-toan-dan-toc-cua-cach-mang-thang-tam-nam-1945-va-su-van-dung-trong-su-nghiep-bao-ve-an-ninh%2C-trat-tu-hien-nay.aspx"
+                              },
+                              {
+                                src: "/LanAnhT02/source/tapchilichsudang.jpg",
+                                alt: "Tạp chí Lịch sử Đảng",
+                                link: "https://tapchilichsudang.vn/vai-tro-cua-mat-tran-viet-minh-doi-voi-phong-trao-dau-tranh-giai-phong-dan-toc.html"
+                              },
+                              {
+                                src: "/LanAnhT02/source/baoquandoinhandan.jpg",
+                                alt: "Báo Quân đội nhân dân",
+                                link: "https://www.qdnd.vn/chinh-tri/tin-tuc/nhung-quyet-sach-quan-trong-tu-hoi-nghi-trung-uong-8-425025"
+                              },
+                              {
+                                src: "/LanAnhT02/source/baonhandan.jpg",
+                                alt: "Báo nhân dân",
+                                link: "https://nhandan.vn/hoi-nghi-trung-uong-dang-lan-thu-8-voi-viec-to-chuc-luc-luong-vu-trang-cach-mang-tien-toi-tong-khoi-nghia-thang-8-nam-1945-post438334.html"
+                              },
+                            ];
+
+                            // Hàm thay đổi nội dung hiển thị - change 3 const 
+                            function changeContent(index) {
+                              const imageElement = document.getElementById('bao-contentImage');
+                              const imageLink = document.getElementById('bao-imageLink');
+                              const tabs = document.querySelectorAll('.tab-button');
+                              
+                              // update pic
+                              imageElement.src = contentData[index].src;
+                              imageElement.alt = contentData[index].alt;
+                              imageLink.href = contentData[index].link;
+                              
+                              // update trạng thái active cho tab
+                              tabs.forEach((tab, i) => {
+                                if (i === index) {
+                                  tab.classList.add('active-tab');
+                                } else {
+                                  tab.classList.remove('active-tab');
+                                }
+                              });
+                            }
+                          </script>
+                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- JS trong -->
+        <script>
+            // Ẩn tất cả các phần nội dung
+            function hideAllContent() {
+                document.querySelectorAll('.content-section').forEach(el => {
+                    el.classList.add('hidden');
+                });
+            }
+
+            // Hiển thị nội dung tương ứng
+            function showContent(id) {
+                // Trước tiên phải ẩn tất cả đã rồi sau đó mới hiện từng thằng 1
+                hideAllContent();
+                
+                // Hiển thị phần được chọn
+                document.getElementById(id).classList.remove('hidden', 'animate-fadeIn');
+                document.getElementById(id).offsetWidth; // Kích hoạt lại animation
+                document.getElementById(id).classList.add('animate-fadeIn');
+
+                // Cập nhật trạng thái menu
+                document.querySelectorAll('#menu button').forEach(btn => {
+                    btn.classList.remove('active-tab', 'bg-teal-100');
+                    btn.classList.add('text-teal-700');
+                });
+                
+                const activeBtn = document.querySelector(`[onclick="showContent('${id}')"]`);
+                activeBtn.classList.add('active-tab');
+                activeBtn.classList.remove('text-teal-700');
+            }
+
+            // Hiển thị thư viện đầu tiên - tựa như mặc định hiển thị thư viện
+            document.addEventListener('DOMContentLoaded', () => {
+                showContent('thuvien');
+            });
+        </script>
+    </section>
+
+  </main>
+  <!-- JS ngoài -->
+  <script src="script.js"></script>
+</body>
+</html>
