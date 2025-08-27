@@ -23,7 +23,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
         <div class="md:col-span-1 flex justify-center">
           <div class="w-40 h-40 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-blue-500 shadow-md">
-            <img src="/LanAnhT02/source/anh_co_lan_anh.jpg" alt="Ảnh Cô Lan Anh" class="w-full h-full object-cover" />
+            <img src="/source/anh_co_lan_anh.jpg" alt="Ảnh Cô Lan Anh" class="w-full h-full object-cover" />
           </div>
         </div>
         <div class="md:col-span-2 bg-white rounded-lg text-center flex items-center justify-center p-4">
@@ -79,7 +79,7 @@
                     </p>
                     
                     <a 
-                        href="/LanAnhT02/source/GiaoTrinhLSD.pdf" 
+                        href="/source/GiaoTrinhLSD.pdf" 
                         download
                         class="inline-flex items-center px-6 py-3 bg-gradient-to-r from-teal-500 to-green-500 text-white rounded-lg hover:from-teal-600 hover:to-green-600 transition-all transform hover:scale-105 shadow-md hover:shadow-lg"
                     >
@@ -104,7 +104,7 @@
                     <!-- Khung PDF -->
                     <div class="relative pt-[100%] bg-white">
                         <iframe 
-                            src="/LanAnhT02/source/GiaoTrinhLSD.pdf" 
+                            src="/source/GiaoTrinhLSD.pdf" 
                             class="absolute inset-0 w-full h-full bg-white"
                             title="Giáo trình Lịch sử Đảng"
                             onload="document.getElementById('loadingPDF').style.display = 'none'"
@@ -217,7 +217,7 @@
                       <h3 class="text-2xl font-bold text-teal-800 mb-4">Thư viện điện tử Học viện Cảnh sát nhân dân</h3>
                       <div class="bg-white rounded-xl overflow-hidden shadow-lg">
                         <img 
-                          src="/LanAnhT02/source/ThuviendientuHVCSND.jpg" 
+                          src="/source/ThuviendientuHVCSND.jpg" 
                           alt="Thư viện" 
                           style="width: 700px; height: 600px; object-fit: cover;"
                         />
@@ -232,9 +232,9 @@
                           <div class="max-w-6xl mx-auto">
                             <!-- Tab điều hướng -->
                             <div class="flex flex-wrap gap-3 mb-6" id="tabContainer">
-                              <button onclick="changeContenttlvkd(0)" class="tab-button active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Hệ thống tư liệu -<br>văn kiện Đảng</button>
-                              <button onclick="changeContenttlvkd(1)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Văn viện Đảng toàn tập <br> tập 7</button>
-                              <button onclick="changeContenttlvkd(2)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Hồ Chí Minh Toàn tập <br> tập 3</button>
+                              <button onclick="changeContenttlvkd(0)" class="tab-button active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Hệ thống tư liệu -<br>văn kiện Đảng Tập 8 - 15</button>
+                              <!-- <button onclick="changeContenttlvkd(1)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Văn viện Đảng toàn tập <br> tập 7</button> -->
+                              <button onclick="changeContenttlvkd(1)" class="tab-button px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Hồ Chí Minh Toàn tập <br> tập 4 - tập 8</button>
                              
                               
                             </div>
@@ -243,7 +243,7 @@
                             <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
                               <a id="tulieuvankiendang-imageLink" href="#" target="_blank" class="absolute inset-0 block">
                                 <img id="tulieuvankiendang-contentImage" 
-                                    src="/LanAnhT02/source/hethongtulieuvankiendang.jpg" 
+                                    src="/source/hethongtulieuvankiendang.jpg" 
                                     alt="Tạp chí cộng sản" 
                                     class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
                               </a>
@@ -254,17 +254,13 @@
                             // Mảng chứa thông tin hình ảnh tlvkd
                             const contentDatatulieuvankiendang = [
                               {
-                                src: "/LanAnhT02/source/hethongtulieuvankiendang.jpg",
+                                src: "/source/hethongtulieuvankiendang.jpg",
                                 alt: "Hệ thống tư liệu - văn kiện Đảng",
-                                link: "https://tulieuvankien.dangcongsan.vn/"
+                                 link:  ""
                               },
+                              
                               {
-                                src: "/LanAnhT02/source/vankiendangtoantaptap7.jpg",
-                                alt: "Văn kiện Đảng toàn tập - tập 7",
-                                link: "https://tulieuvankien.dangcongsan.vn/van-kien-tu-lieu-ve-dang/book/van-kien-dang-toan-tap/van-kien-dang-toan-tap-tap-7-87"
-                              },
-                              {
-                                src: "/LanAnhT02/source/hochiminhtoantaptap3.jpg",
+                                src: "/source/hochiminhtoantap48.jpg",
                                 alt: "Hồ Chí Minh toàn tập - tập 3",
                                 link: "https://tulieuvankien.dangcongsan.vn/c-mac-angghen-lenin-ho-chi-minh/book/ho-chi-minh/tac-pham/ho-chi-minh-toan-tap-tap-3-270"
                               },
@@ -300,7 +296,7 @@
                           <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
                               <a href="https://tulieuvankien.dangcongsan.vn/" target="_blank" rel="noopener noreferrer" class="absolute inset-0 block">
                                  <img id="tulieuvankiendang-contentImage" 
-                                    src="/LanAnhT02/source/hethongtulieuvankiendang.jpg" 
+                                    src="/source/hethongtulieuvankiendang.jpg" 
                                     alt="Hệ thống tư liệu - văn kiện Đảng" 
                                     class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
                               </a> 
@@ -349,19 +345,19 @@
                                     <div class="flex h-full">
                                         <!-- Phần hình ảnh -->
                                         <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
-                                            <img src="/LanAnhT02/source/sach1phongtraodanchu.jpg"
-                                                alt="Bìa sách Phong trào dân tộc dân chủ ở nam kỳ 1930 - 1945"
+                                            <img src="/source/sach1.jpg"
+                                                alt="Bìa sách Cách mạng Tháng Tám - Xây dựng và củng cố chính quyền 1945 - 1946 (Văn kiện Đảng và Nhà nước)"
                                                 class="w-[310px] h-[450px] object-cover">
                                         </div>
                                         <!-- Phần thông tin -->
                                         <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
-                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">PHONG TRÀO DÂN TỘC DÂN CHỦ Ở NAM KỲ 1930 - 1945</h4>
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">Cách mạng Tháng Tám - Xây dựng và củng cố chính quyền 1945 - 1946 (Văn kiện Đảng và Nhà nước)</h4>
                                             
                                                   <div class=" leading-[40px] flex-grow text-[20px]"> 
-                                                    <div><b>Tác giả:</b> TS. Phạm Thị Huệ</div>
-                                                    <div><b>Số trang:</b> 400 trang</div>
-                                                    <div><b>Giá tiền:</b> 95.000 đ</div>
-                                                    <div><b>Xuất bản:</b> 2013</div>
+                                                    <div><b>Tác giả:</b> Cục Lưu trữ Văn phòng Trung ương Đảng, Cục Văn thư và Lưu trữ nhà nước</div>
+                                                    <div><b>Số trang:</b> 664 trang</div>
+                                                    <div><b>Giá tiền:</b> Sách không bán</div>
+                                                    <div><b>Xuất bản:</b> 8-2020</div>
                                                 </div>
                                       
                                             <div class="flex gap-2 mt-auto">
@@ -377,19 +373,18 @@
                                     <div class="flex h-full">
                                         <!-- Phần hình ảnh -->
                                         <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
-                                            <img src="/LanAnhT02/source/sach2cachmangthang8.jpg"
-                                                alt="Bìa sách Cách mạng tháng Tám 1945 - thắng lợi vĩ đại đầu tiên của dân tộc Việt Nam trong thế kỷ XX"
+                                            <img src="/source/sach2cachmangthang8.jpg"
+                                                alt="Bìa sách TỔNG KẾT CUỘC KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP THẮNG LỢI VÀ BÀI HỌC"
                                                 class="w-[310px] h-[450px] object-cover">
                                         </div>
                                         <!-- Phần thông tin -->
                                         <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
-                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-4 text-red-500">CÁCH MẠNG THÁNG TÁM 1945 - THẮNG LỢI VĨ ĐẠI ĐẦU TIÊN CỦA DÂN TỘC VIỆT NAM TRONG THẾ KỶ XX</h4>
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-4 text-red-500">TỔNG KẾT CUỘC KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP THẮNG LỢI VÀ BÀI HỌC</h4>
                                             
                                                   <div class=" leading-[40px] flex-grow text-[20px]"> 
-                                                    <div><b>Tác giả:</b> GS.TS.NGND Trịnh Nhu, PGS.TS Trần Trọng Thơ</div>
-                                                    <div><b>Số trang:</b> 448 trang</div>
-                                                    <div><b>Giá tiền:</b> 60.000 đ</div>
-                                                    <div><b>Xuất bản:</b> 2020</div>
+                                                    <div><b>Nhà xuất bản</b> Chính trị Quốc gia - Sự thật </div>
+
+                                                    <div><b>Xuất bản:</b> 2014</div>
                                                 </div>
                                       
                                             <div class="flex gap-2 mt-auto">
@@ -405,19 +400,18 @@
                                     <div class="flex h-full">
                                         <!-- Phần hình ảnh -->
                                         <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
-                                            <img src="/LanAnhT02/source/sach3cachmangthang8.jpg"
-                                                alt="Bìa sách Cách mạng Tháng Tám năm 1945 ở Hà Nội"
+                                            <img src="/source/sach3cachmangthang8.jpg"
+                                                alt="Bìa sách LỊCH SỬ BIÊN NIÊN ĐẢNG CỘNG SẢN VIỆT NAM - TẬP 3"
                                                 class="w-[310px] h-[450px] object-cover">
                                         </div>
                                         <!-- Phần thông tin -->
                                         <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
-                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM NĂM 1945 Ở HÀ NỘI</h4>
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">LỊCH SỬ BIÊN NIÊN ĐẢNG CỘNG SẢN VIỆT NAM - TẬP 3</h4>
                                             
                                                   <div class=" leading-[40px] flex-grow text-[20px]"> 
-                                                    <div><b>Tác giả:</b> Nguyễn Đình Lê </div>
-                                                    <div><b>Số trang:</b> 448 trang</div>
-                                                    <div><b>Giá tiền:</b> </div>
-                                                    <div><b>Xuất bản:</b> 2010</div>
+                                                    <div><b>Nhà xuất bản:</b> Chính trị Quốc gia - Sự thật </div>
+                             
+                                                    <div><b>Năm xuất bản:</b> 2009</div>
                                                 </div>
                                       
                                             <div class="flex gap-2 mt-auto">
@@ -433,19 +427,20 @@
                                     <div class="flex h-full">
                                         <!-- Phần hình ảnh -->
                                         <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
-                                            <img src="/LanAnhT02/source/sach4cachmangthangtam.jpg"
-                                                alt="Bìa sách Cách mạng Tháng Tám 1945 toàn cảnh"
+                                            <img src="/source/sach4cachmangthangtam.jpg"
+                                                alt="Bìa sách Lịch sử cuộc kháng chiến chống thực dân Pháp"
                                                 class="w-[310px] h-[450px] object-cover">
                                         </div>
                                         <!-- Phần thông tin -->
                                         <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
-                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM 1945 TOÀN CẢNH</h4>
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">LỊCH SỬ CUỘC KHÁNG CHIẾN CHỐNG THỰC DÂN PHÁP 1945 - 1954 TẬP II</h4>
                                             
                                                   <div class=" leading-[40px] flex-grow text-[20px]"> 
-                                                    <div><b>Tác giả:</b> GS.TS Phan Ngọc Liên</div>
-                                                    <div><b>Số trang:</b> 543 trang</div>
-                                                    <div><b>Giá tiền:</b> đ</div>
-                                                    <div><b>Xuất bản:</b> 2005</div>
+                                                    <div><b>Số lượng:</b> 7 tập</div>
+                                                    <div><b>Tác giả:</b> Viện Lịch sử quân sự</div>
+                                                    <div><b>Số trang:</b> 3630 trang</div>
+                                                    <div><b>Giá tiền:</b> Sách không bán</div>
+                                                    <div><b>Xuất bản:</b> 12/2024</div>
                                                 </div>
                                       
                                             <div class="flex gap-2 mt-auto">
@@ -461,19 +456,18 @@
                                     <div class="flex h-full">
                                         <!-- Phần hình ảnh -->
                                         <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
-                                            <img src="/LanAnhT02/source/sach5cachmangthang8.jpg"
-                                                alt="Bìa sách Cách mạng Tháng Tám - Những giờ phút lịch sử"
+                                            <img src="/source/sach5cachmangthang8.jpg"
+                                                alt="Bìa sách TỔNG KẾT CUỘC KHÁNG CHIẾN CHỐNG MỸ, CỨU NƯỚC: THẮNG LỢI VÀ BÀI HỌC"
                                                 class="w-[310px] h-[450px] object-cover">
                                         </div>
                                         <!-- Phần thông tin -->
                                         <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
-                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">CÁCH MẠNG THÁNG TÁM - NHỮNG GIỜ PHÚT LỊCH SỬ</h4>
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">TỔNG KẾT CUỘC KHÁNG CHIẾN CHỐNG MỸ, CỨU NƯỚC: THẮNG LỢI VÀ BÀI HỌC</h4>
                                             
                                                   <div class=" leading-[40px] flex-grow text-[20px]"> 
-                                                    <div><b>Tác giả:</b> GS Đinh Xuân Lâm, TS Nguyễn Văn Khoan</div>
-                                                    <div><b>Số trang:</b> 400 trang</div>
-                                                    <div><b>Giá tiền:</b>  đ</div>
-                                                    <div><b>Xuất bản:</b> 2010</div>
+                                                    <div><b>Nhà xuất bản: </b> Chính trị Quốc gia</div>
+                                        
+                                                    <div><b>Năm xuất bản:</b> 1995</div>
                                                 </div>
                                       
                                             <div class="flex gap-2 mt-auto">
@@ -482,7 +476,67 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>                                                                
+                                </div>   
+                                
+                                <!-- Sách 6-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/source/sach6.jpg"
+                                                alt="Bìa sách Lịch Sử Kháng Chiến Chống Mỹ, Cứu Nước 1954-1975"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">Lịch Sử Kháng Chiến Chống Mỹ, Cứu Nước 1954-1975</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    
+                                                    <div><b>Số lượng</b> 8 tập</div>
+                                                    <div><b>Nhà xuất bản:</b> NXB Chính Trị Quốc Gia</div>
+                                                    <div><b>Năm xuất bản:</b> 2015</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+
+                                <!-- Sách 7-->
+                                <div class="bg-white rounded-xl shadow-lg overflow-hidden h-full w-100 flex-shrink-0">
+                                    <div class="flex h-full">
+                                        <!-- Phần hình ảnh -->
+                                        <div class="flex items-center justify-center bg-gray-100 flex-shrink-0">
+                                            <img src="/source/sach7.jpg"
+                                                alt="Bìa sách Cuộc kháng chiến chống Mỹ, cứu nước của Việt Nam - Tác động của những nhân tố quốc tế"
+                                                class="w-[310px] h-[450px] object-cover">
+                                        </div>
+                                        <!-- Phần thông tin -->
+                                        <div class="p-4 flex flex-col w-[370px] justify-center lex-grow bg-gray-100">
+                                          <h4 class="font-bold text-[20px] text-teal-800 mb-2 mt-10 line-clamp-2 text-red-500">Cuộc kháng chiến chống Mỹ, cứu nước của Việt Nam - Tác động của những nhân tố quốc tế</h4>
+                                            
+                                                  <div class=" leading-[40px] flex-grow text-[20px]"> 
+                                                    
+                                                    <div><b>Tác giả:</b> Nguyễn Khắc Huỳnh</div>
+                                                    <div><b>Số trang:</b> 264 trang</div>
+                                                    <div><b>Giá tiền:</b> Sách không bán</div>
+                                                    <div><b>Năm xuất bản:</b> 2023</div>
+                                                </div>
+                                      
+                                            <div class="flex gap-2 mt-auto">
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Thích 0</button>
+                                                <button class="bg-blue-600 text-white px-2 py-1 text-xs rounded">Chia sẻ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>   
+
+
+
                             </div>
                         </div>
                     </div>
@@ -495,10 +549,10 @@
                           <div class="max-w-6xl mx-auto">
                             <!-- Tab điều hướng -->
                             <div class="flex flex-wrap gap-3 mb-6" id="tabContainer">
-                              <button onclick="changeContent(0)" class="tab-button text-[15px] font-semibold active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Tạp chí Cộng sản</button>
-                              <button onclick="changeContent(1)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Tạp chí lịch sử Đảng</button>
-                              <button onclick="changeContent(2)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Báo Quân đội nhân dân</button>
-                              <button onclick="changeContent(3)" class="tab-button text-[15px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Báo nhân dân</button>
+                              <button onclick="changeContent(0)" class="tab-button text-[13px] font-semibold active-tab px-4 py-2 bg-teal-600 text-white rounded-lg transition-all duration-300 hover:bg-teal-700">Tạp chí Cộng sản</button>
+                              <button onclick="changeContent(1)" class="tab-button text-[13px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Tạp chí lịch sử Đảng</button>
+                              <button onclick="changeContent(2)" class="tab-button text-[13px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Báo Quân đội nhân dân</button>
+                              <button onclick="changeContent(3)" class="tab-button text-[13px] font-semibold px-4 py-2 bg-white text-gray-800 border border-gray-300 rounded-lg transition-all duration-300 hover:bg-gray-100">Tạp chí quốc phòng toàn dân</button>
                               
                             </div>
 
@@ -506,7 +560,7 @@
                             <div class="relative pt-[75%] bg-white rounded-xl shadow-lg overflow-hidden mx-auto max-w-4xl">
                               <a id="bao-imageLink" href="#" target="_blank" class="absolute inset-0 block">
                                 <img id="bao-contentImage" 
-                                    src="/LanAnhT02/source/tapchicongsan.jpg" 
+                                    src="/source/tapchicongsan.jpg" 
                                     alt="Tạp chí cộng sản" 
                                     class="absolute inset-0 w-full h-full object-cover transition-opacity duration-500">
                               </a>
@@ -518,24 +572,24 @@
                             // Mảng chứa thông tin hình ảnh
                             const contentData = [
                               {
-                                src: "/LanAnhT02/source/tapchicongsan.jpg",
+                                src: "/source/tapchicongsan.jpg",
                                 alt: "Tạp chí cộng sản",
-                                link: "https://www.tapchicongsan.org.vn/web/guest/chi-tiet-tim-kiem/-/2018/965402/bai-hoc-phat-huy-suc-manh-toan-dan-toc-cua-cach-mang-thang-tam-nam-1945-va-su-van-dung-trong-su-nghiep-bao-ve-an-ninh%2C-trat-tu-hien-nay.aspx"
+                                link: "https://www.tapchicongsan.org.vn/nghien-cu/-/2018/28684/ung-pho-voi-thu-trong%2C-giac-ngoai%2C-bao-ve-vung-chac-thanh-qua-cach-mang-thang-tam-nam-1945---van-de-con-nguyen-tinh-thoi-su-hien-nay.aspx"
                               },
                               {
-                                src: "/LanAnhT02/source/tapchilichsudang.jpg",
+                                src: "/source/tapchilichsudang.jpg",
                                 alt: "Tạp chí Lịch sử Đảng",
-                                link: "https://tapchilichsudang.vn/vai-tro-cua-mat-tran-viet-minh-doi-voi-phong-trao-dau-tranh-giai-phong-dan-toc.html"
+                                link: "https://tapchilichsudang.vn/phong-trao-binh-dan-hoc-vu-1945-1946.html"
                               },
                               {
-                                src: "/LanAnhT02/source/baoquandoinhandan.jpg",
+                                src: "/source/baoquandoinhandan.jpg",
                                 alt: "Báo Quân đội nhân dân",
-                                link: "https://www.qdnd.vn/chinh-tri/tin-tuc/nhung-quyet-sach-quan-trong-tu-hoi-nghi-trung-uong-8-425025"
+                                link: "https://www.qdnd.vn/tu-lieu-ho-so/ngay-nay-nam-xua/ngay-6-3-1946-hiep-dinh-so-bo-phap-viet-duoc-ky-ket-687622"
                               },
                               {
-                                src: "/LanAnhT02/source/baonhandan.jpg",
+                                src: "/source/baonhandan.jpg",
                                 alt: "Báo nhân dân",
-                                link: "https://nhandan.vn/hoi-nghi-trung-uong-dang-lan-thu-8-voi-viec-to-chuc-luc-luong-vu-trang-cach-mang-tien-toi-tong-khoi-nghia-thang-8-nam-1945-post438334.html"
+                                link: "https://tapchiqptd.vn/vi/lich-su-quan-su-viet-nam/duong-loi-dau-tranh-giu-vung-chinh-quyen-bao-ve-nen-doc-lap-tu-do-nhung-nam-dau-thanh-lap-/14280.html"
                               },
                             ];
 
